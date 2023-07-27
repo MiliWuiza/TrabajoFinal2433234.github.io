@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #84ffeb, #ffacf4);
+}
+
+.resume {
+    width: 800px;
+    background: #e7e7e7;
+    margin: 25px auto;
+    display: flex;
+}
+
+.left {
+    background: #000000;
+    width: 250px;
+    padding: 0  20px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+}
+
+.right {
+    width: calc(100% - 250px);
+}
+
+.left .img_holder {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img_holder img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+
+.role1 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about1 {
+    color: #000000;
+    text-align: justify;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #000000;
+    position: relative;
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    position: relative;
+    background-color: #000000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 0px;
+    height: 8px;
+    background: #fff;
+}
+
+.left .icon {
+    font-size: 20px;
+    color: #33abbb;
+    border-radius: 100px;
+}
+
+.left .text {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.contact .li_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact .li_wrap .text {
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color: rgb(255, 255, 255);
+}
+
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li_wrap {
+    background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text {
+    margin-top: 5px;
+}
+
+.hobbies .li_wrap {
+    border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text {
+    color: #00f790;
+}
+
+.hobbies .li_wrap:hover {
+    background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text {
+    color: #000000;
+}
+
+.header {
+    background: #c5c5c5;
+    padding: 15px 30px;
+    color: #fff;
+    height: 240px;
+    width: auto;
+}
+
+.header .name {
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+}
+
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about {
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.right_inner {
+    padding: 30px;
+    color: #000000;
+}
+
+.right_inner .education {
+    margin-top: 30px;
+}
+
+.right_inner .li_wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #ff0000;
+}
+
+.right_inner .li_wrap .info {
+    width: calc(100%  - 1px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.right_inner .li_wrap .info_title {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.right_inner .li_wrap .info_com {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.right_inner .li_wrap .info_cont {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.right_inner .li_wrap .info:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    background: #2f00ff;
+}
